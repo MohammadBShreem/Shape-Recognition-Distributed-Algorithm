@@ -138,10 +138,17 @@ The main loop periodically updates the node state and ensures consistent executi
        }
        ```
        If distances are equal, broadcast the **H SHAPE** message.
-              <div align="center">
+
+<div align="center">
               <img src="https://github.com/user-attachments/assets/6983cc04-ee45-462e-80c6-a3db4f6aa65d"></br>
-              <i>Figure 2: diagram for H Shape</i>
+              <i>Figure 2-a: diagram for H Shape</i>
               </div>
+        
+<div align="center">
+       <img src="https://github.com/user-attachments/assets/8dbbde06-66f0-46fb-9bc4-38face2a031e"></br>
+       <i>Figure 2-b: diagram for H Shape</i>
+     </div>
+
 
 ---
 
@@ -197,7 +204,12 @@ The main loop periodically updates the node state and ensures consistent executi
    
      <div align="center">
        <img src="https://github.com/user-attachments/assets/3dba5f93-e5a4-499e-9962-0861287cf5bc"></br>
-       <i>Figure 3: diagram for square Shape</i>
+       <i>Figure 3-a: diagram for square Shape</i>
+     </div>
+
+<div align="center">
+       <img src="https://github.com/user-attachments/assets/4f294234-849e-4464-ae2f-b1014e2183d6"></br>
+       <i>Figure 3-b: diagram for square Shape</i>
      </div>
 ---
 
@@ -226,6 +238,11 @@ Checks the state of neighbors after setting coordinates. Behavior depends on the
 
 - **SQUARE**:
   - Similar checks as PLUS and H, ensuring symmetry and closure at each node.
+
+<div align="center">
+       <img src="https://github.com/user-attachments/assets/70aab8bc-e134-43e2-b8be-b59fd401a851"></br>
+       <i>Figure 3-c: diagram for state check</i>
+     </div>
 
 ### `validatePlusShape`
 Validates the geometry of a **PLUS** shape by comparing neighbor distances.
